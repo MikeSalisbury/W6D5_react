@@ -7,10 +7,14 @@ class Tabs extends React.Component {
   }
 
   render(){
-
     return (
       <div className="widget">
         <h1>Tabs</h1>
+        <ul>
+        {this.props.arrTabs.map((el) => (
+          <h2>{el['title']}</h2>
+        ))}
+        </ul>
       </div>
     );
   }
